@@ -10,8 +10,9 @@
 @tailwind utilities;
 
 @layer base {
-   html {
+  html {
     scroll-behavior: smooth;
+    -webkit-top-highlight-color: transparent;
   }
   h1,
   h2,
@@ -55,6 +56,12 @@
   .btn {
     @apply py-2 px-9 border-2 rounded-md
      border-dark_primary rounded-br-3xl font-medium;
+  }
+  .title {
+    @apply md:text-3xl text-2xl;
+  }
+  .subtitle {
+    @apply text-gray;
   }
 }
 .swiper-pagination-bullet {
